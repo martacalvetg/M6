@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Practica 2</title>
+</head>
+<body>
+    
+    <div class="titulo">
+        <h1>C O N C U R S O</h1>
+    </div>
+    <div id="main">
+        <div id="preguntas1">
+            <div id="pregunta1">
+                <h2 class="numeroPregunta">PREGUNTA 1</h2>
+
+                <p>¿Cuál es el primer planeta del Sistema Solar?</p>
+
+                <div class="inline">
+                    <input type="radio" name="respuestas1" value="venus" id="venus">
+                    <label for="html" id="venusl"></label>
+                        <br>
+                    <input type="radio" name="respuestas1" value="mercurio" id="mercurio" >
+                    <label for="html" id="mercuriol"></label>
+                        <br>
+                    <input type="radio" name="respuestas1" value="pluton" id="pluton" >
+                    <label for="html" id="plutonl"></label>
+                        <br>
+
+                </div>
+            </div>
+
+            <div id="pregunta2">
+                <h2 class="numeroPregunta">PREGUNTA 2</h2>
+
+                <p>¿Cuántos planetas tiene el Sistema Solar?</p>
+
+                <div class="inline">
+                    <input type="radio" name="respuestas2" value="9" id="nueve" >
+                    <label for="html" id="nuevel"></label>
+                        <br>
+                    <input type="radio" name="respuestas2" value="7" id="siete" >
+                    <label for="html" id="sietel"></label>
+                        <br>
+                    <input type="radio" name="respuestas2" value="8" id="ocho" >
+                    <label for="html" id="ochol"></label>
+                        <br>
+
+                </div>
+            </div>
+            <button type="button" id="boton1" onclick="CorreccionPregunta1y2();">Comprobar</button>
+            <b><p id="correcto12"></p></b>
+        </div>
+
+        <div id="preguntas2">
+            <div id="pregunta3">
+                <h2 class="numeroPregunta">PREGUNTA 3</h2>
+
+                <p>¿Cuál es el número Pi?</p>
+
+                <div>
+                    <input type="radio" value="3,1415" name="respuestas3" id="3,1415" >
+                    <label for="html" id="3,1415l"></label>
+                        <br>
+                    <input type="radio" value="3,1514" name="respuestas3" id="3,1514">
+                    <label for="html" id="3,1514l"></label>
+                        <br>
+                    <input type="radio" value="3,1516" name="respuestas3" id="3,1516">
+                    <label for="html" id="3,1516l"></label>
+                        <br>
+                    
+                </div>
+            </div>
+
+            
+
+            <div id="pregunta4">
+                <h2 class="numeroPregunta">PREGUNTA 4</h2>
+
+                <p>¿Cuánto es 3 elevado a 0?</p>
+
+                <div>
+                    <input type="radio" value="3" name="respuestas4" id="3" >
+                    <label for="html" id="3l">3</label>
+                        <br>
+                    <input type="radio" value="0" name="respuestas4" id="0">
+                    <label for="html" id="0l">0</label>
+                        <br>
+                    <input type="radio" value="1" name="respuestas4" id="1">
+                    <label for="html" id="1l">1</label>
+                        <br>
+                    
+                </div>
+            </div>
+            <button type="button" id="boton2" onclick="CorreccionPregunta3y4()">Comprobar</button>
+            <b><p id="correcto34"></p></b>
+
+        </div>
+        
+
+        
+    </div>
+    
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
