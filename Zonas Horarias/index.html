@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="titol">
+        <h1>Práctica 1 - UF2</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 opciones text-center">
+                <div>
+                    <div id="opcionFecha" >
+                        <h2>FORMATO DE FECHA</h2>
+        
+                        <input type="radio" value="1" name="fecha" onclick="funcionFecha()">
+                        <label>DD/MM/YYYY</label><br>
+        
+                        <input type="radio" value="2" name="fecha" onclick="funcionFecha()">
+                        <label>DIA-MES-AÑO</label><br>
+        
+                        <input type="radio" value="3" name="fecha" onclick="funcionFecha()">
+                        <label>DIA-MES-AÑO (Simplificado)</label>
+                        
+                    </div>
+                    <div id="opcionHora">
+
+                        <h2>FORMATO DE HORA</h2>
+        
+                        <input type="radio" value="12H" name="hora" onclick="funcionHora()">
+                        <label>12H</label><br>
+        
+                        <input type="radio" value="24H" name="hora" onclick="funcionHora()">
+                        <label>24H</label><br>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 text-center rellotje">
+                <canvas id='canvas' width='300' height='300'>NAVEGADOR NO SOPORTA CANVAS</canvas>
+                <p id="mostrarFecha"></p>
+                <p id="mostrarHora"></p>
+                
+            </div>
+
+            <div class="col-lg-4 bg">
+                <img src="/img/mapaZH2.svg.png" id="mapa">
+
+                <!--DIVS INFO ZONA HORARIA-->
+
+                <div class="infoZH infoOccidental" id="infoOccidental">
+                    <p>OCCIDENTAL UTC±00:00</p>
+                    <p>Reino unido, Islandia, Irlanda, Portugal</p>
+                </div>
+
+                <div class="infoZH infoCentral" id="infoCentral">
+                    <p>CENTRAL UTC+01:00</p>
+                    <p>España, Andorra, Francia, Luxemburgo, Bélgica, Paises Bajos, Dinamarca, Noruega, Alemania, Italia, Polonia, Suecia, Republica Checa, albania, Macedonia, Serbia, Suiza, Croacia, Austria, Eslovaquia, Hungría, Montegengro, Bosnia y Herzegovina, Slovenia</p>
+                </div>
+
+                <div class="infoZH infoOriental" id="infoOriental">
+                    <p>ORIENTAL UTC+02:00</p>
+                    <p>Filandia, Estonia, Lithuania, Romania, Bulgaria, Grecia, Turkia, Ucrania, Moladavia, Letonia</p>
+                </div>
+
+                <div class="infoZH infoUltraOriental" id="infoUltraOriental">
+                    <p>ULTRA ORIENTAL UTC+03:00</p>
+                    <p>Rusia, Bielorusia</p>
+                </div>
+
+                
+
+                <!--RADIO BUTTONS MAPA-->
+
+                <div id="occidental" class="occidental cRadio">
+                    <input type="radio" value="occidental" name="zh" onclick="funcionHora()">
+                </div>
+
+                <div id="central" class="central cRadio">
+                    <input type="radio" value="central" checked="checked" name="zh" onclick="funcionHora()">
+                </div>
+
+                <div id="Oriental" class="oriental cRadio">
+                    <input type="radio" value="oriental" name="zh" onclick="funcionHora()">
+                </div>
+
+                <div id="ultraOriental" class="ultraOriental cRadio">
+                    <input type="radio" value="ultraOriental" name="zh" onclick="funcionHora()">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        
+
+    
+
+    <script src="js/script.js"></script>
+    <script src="js/relojAnalogico.js"></script>
+</body>
+</html>
+
+

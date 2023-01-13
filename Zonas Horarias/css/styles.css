@@ -1,0 +1,152 @@
+body{
+    background: rgb(120, 157, 180);
+}
+  
+#canvas{
+    margin-top: 20px;
+    border:solid  2px #000000;
+    background:rgb(189, 107, 107);
+}
+
+#titol{
+    border:solid  2px rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgb(57, 133, 180);
+    padding: 10px;
+    
+}
+#opciones{
+    background:rgb(189, 107, 107);
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    display: inline;
+    margin-top: 140px;
+
+}
+#mapa{
+    margin-top: 20px;
+    height: 700px;
+    z-index: 0;
+    position: absolute;
+    /*background-color: rgb(63, 63, 63);*/
+    border: #000000 solid 2px;
+}
+.opciones{
+    margin-top: 178px;
+}
+
+.rellotje{
+    margin-top: 140px;
+}
+
+#opcionHora{
+    margin-top: 20px;
+}
+#mostrarHora, #mostrarFecha{
+    font-size: 20px;
+}
+.cRadio{
+    position: absolute;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+/*RADIO BUTTONS MAPA*/
+
+#occidental{
+    margin-top: 350px;
+    margin-left: 160px;
+}
+#central{
+    margin-top: 500px;
+    margin-left: 200px;
+}
+#Oriental{
+    margin-top: 420px;
+    margin-left: 530px;
+}
+#ultraOriental{
+    margin-top: 200px;
+    margin-left: 560px;
+}
+
+/*DIVS INFO ZH*/
+
+.infoZH{
+    position: absolute;
+    z-index: 1;
+}
+
+.infoOccidental{
+    margin-top: 350px;
+    margin-left: 180px;
+    
+}
+
+.infoCentral{
+    margin-top: 510px;
+    margin-left: 215px;
+    width: 400PX;
+}
+
+.infoOriental{
+    margin-top: 440px;
+    margin-left: 410px;
+    width: 260PX;
+    
+}
+
+.infoUltraOriental{
+    margin-top: 230px;
+    margin-left: 450px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+.infoOccidental, .infoCentral, .infoOriental, .infoUltraOriental{
+    background-color: rgba(219, 219, 219, 0.253);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: justify;
+}
+
+input[type='radio']{
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 15px;
+    height: 15px;
+ }
+ 
+tr:hover > td input[type='radio']::after{
+    display: inline-block;
+    content: "";
+    position: relative;
+    height: 7px;
+    width: 7px;
+    background: transparent;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    top: -2px;
+    left: 1px;
+}
+
+input[type="radio"]:checked::after{
+    display: inline-block;
+    content: "";
+    position: relative;
+    height: 7px;
+    width: 7px;
+    background: rgb(0, 0, 0);
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    top: -2px;
+    left: 1px;
+    margin-bottom: 7px;
+    margin-left: 1px;
+}
