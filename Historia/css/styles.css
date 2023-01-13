@@ -1,0 +1,117 @@
+
+#body_bosque{
+    background-attachment: fixed;
+    background-image: url(/img/bosque.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+#body_montana{
+    background-attachment: fixed;
+    background-image: url(/img/montana.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+#body_camino{
+    background-attachment: fixed;
+    background-image: url(/img/camino.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+#body{
+    background-color: rgb(147, 197, 255);
+}
+
+.titulo{
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+
+}
+.historiap1{
+    display: inline;
+    float: left;
+    display: absolte;
+}
+.historia{
+    width: 1000px;
+    text-align: justify;
+    padding: 25px;
+    margin: 0 auto;
+    background-color: rgb(192, 115, 255);
+    border-radius: 30px;
+    border: 3px solid ;
+}
+.options{
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+
+}
+.divsDentro{
+    background-color: rgb(255, 255, 255);
+    border: black solid 3px;
+    height: 30px;
+    width: 150px;
+    display: inline-block;
+}
+
+.opciones1, .opciones2, .opciones3{
+    display: inline;
+    float: left;
+    padding: 50px;
+    color: black;
+
+}
+
+#opcion11, #opcion12, #opcion13, #opcion21, #opcion22, #opcion23, #opcion31, #opcion32, #opcion33{
+    background-color: hsl(0, 0%, 77%);
+    margin-top:20px;
+    padding: 5px;
+    max-width: 240px;
+    border: black 2px solid;
+    text-align: center;
+
+}
+
+#opcion11:hover, #opcion12:hover, #opcion13:hover, #opcion21:hover, #opcion22:hover, #opcion23:hover, #opcion31:hover, #opcion32:hover, #opcion33:hover{
+    background-color: hsl(120, 100%, 75%);
+
+}
+
+#span1, #span2, #span3{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(83, 163, 255);
+    border: black 1px solid;
+}
+
+p{
+    font-size: 20px;
+}
+.titOpcion{
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+
+}
+
+#espacio11, #espacio12, #espacio13{
+    width: 150px;
+    height: 36px;
+    background-color: hsl(0, 0%, 77%);
+}
+
+
+#botones{
+    text-align: center;
+    margin-top: 40px;
+}
+button:hover{
+    background-color: rgb(103, 139, 255);
+}
+button{
+    padding: 9px;
+}

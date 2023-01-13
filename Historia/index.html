@@ -1,0 +1,59 @@
+<!--https://www.svgbackgrounds.com/-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Practica 2 UF2</title>
+</head>
+<body id="body">
+    <nav>
+        <h1 class="titulo">UF2 - PRÁCTICA 2</h1>
+    </nav>
+    <section class="historia">
+        <h2>Contruye tu propia história</h2>
+        <p>Una familia se fue de excursión a la montaña, después de caminar durante horas se perdieron. Al cabo de un rato tuvieron que escoger entre tres caminos, fueron por </p>
+        <div class="span span1" id="span1"></div>
+        <p>Siguieron avanzando casi sin ningún problema, después de una horas andando se pararon a comer algunas de las provisiones que traían en la mochila, siguieron avanzando y cada vez había menos luz y sacaron de la mochila</p> 
+        <div class="span span2" id="span2"></div>
+        <p>Como se había hecho de noche empezaba a hacer más frio, pero no trían nada para abrigarse así que buscaron un lugar donde poder dormir y que no pasarán frío. después de buscar, </p>
+        <div class="span span3" id="span3"></div> 
+
+        <div id="botones">
+            <button type="reset" onclick="recargar()">LIMPIAR</button>
+            <a id="hrefSiguiente" href="/final_historia_bosque.html"><button id="buttonEnviar" disabled>ENVIAR</button></a>
+        </div>
+    </section>
+
+    <section class="options">
+        <section class="opciones1">
+            <p class="titOpcion">Opcion 1</p>
+            <div id="opcion11" draggable="true">el camino de tierra</div>
+            <div id="opcion12" draggable="true">el bosque</div>
+            <div id="opcion13" draggable="true">la montaña</div>
+        </section>
+
+        <section class="opciones2">
+            <p class="titOpcion" >Opcion 2</p>
+            <div id="opcion21" draggable="true">una linterna</div>
+            <div id="opcion22" draggable="true">unas cerillas</div>
+            <div id="opcion23" draggable="true">la lintera del teléfono</div>
+        </section>
+
+        <section class="opciones2">
+            <p class="titOpcion" >Opcion 3</p>
+            <div id="opcion31" draggable="true">no encontrarón nada y se tumbaron un el suelo</div>
+            <div id="opcion32" draggable="true">hicierón un fuego y durmierón alrededor</div>
+            <div id="opcion33" draggable="true">a pesar de tener frío y cansancio siguieron abanzando</div>
+        </section>
+
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
