@@ -1,0 +1,54 @@
+.content{
+    background-color: rgb(75, 124, 75);
+    padding: 20px;
+}
+
+
+.btnAzul{
+    background-color: rgb(101, 101, 230);
+}
+.btnAzul:hover{
+    background-color: rgb(84, 84, 194);
+}
+.bgAzul{
+    background-color: rgb(101, 101, 230);
+}
+
+
+.bgTurquesa{
+    background-color: rgb(84, 190, 194);
+}
+.btnTurquesa{
+    background-color: rgb(84, 190, 194);
+}
+.btnTurquesa:hover{
+    background-color: rgb(63, 145, 148);
+}
+
+
+.btnRojo{
+    background-color: rgb(230, 100, 100);
+}
+.bgRojo{
+    background-color: rgb(230, 100, 100);
+}
+.btnRojo:hover{
+    background-color: rgb(179, 77, 77);
+}
+
+
+.btnVerde{
+    background-color: rgb(100, 230, 122);
+}
+.bgVerde{
+    background-color: rgb(100, 230, 122);
+}
+.btnVerde:hover{
+    background-color: rgb(78, 180, 95);
+}
+
+.boton{
+    height: 20px;
+    width: 40px;
+    margin:10px 30px;
+}
