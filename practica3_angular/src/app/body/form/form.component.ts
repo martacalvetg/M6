@@ -15,7 +15,13 @@ export class FormComponent implements OnInit{
    validatorDNI(dni:FormControl){
        if (isValidDni(dni.value)) {return {colorErroneo:true};}
        else {return null;}
-     }
+    }
+
+    validatorFN(fecha:FormControl){
+      var year = new Date().getFullYear();
+
+    
+    }
 
     nombre: FormControl = new FormControl('', Validators.required);
     apellido1: FormControl = new FormControl('', [Validators.minLength(3), Validators.maxLength(10)]);
